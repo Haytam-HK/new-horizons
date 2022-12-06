@@ -1,0 +1,203 @@
+
+/*---------------------------------------
+  CUSTOM PROPERTIES ( VARIABLES )             
+-----------------------------------------*/
+:root {
+    --white-color:                  #ffffff;
+    /* hover */
+    --primary-color:                #003658;
+    --secondary-color:              #1679e8;
+    --section-bg-color:             #f0f8ff;
+    --dark-color:                   #000000;
+    /* color nav */
+    --navbar-bg-color:              #024e7f;
+    --p-color:                      hwb(225 44% 54%);
+     --h4-font-size:                 25px;
+     --p-font-size:                  18px;
+  
+  }
+  
+  #id4{
+    margin-left: 80px;
+  }
+  
+  h4
+  
+   {
+    color: var(--dark-color);
+  }
+  
+  h4 {
+    font-weight: var(--font-weight-bold);
+    letter-spacing: -1px;
+  }
+  
+  h4 {
+    font-size: var(--h4-font-size);
+  }
+  
+  p {
+    color: var(--p-color);
+    font-size: var(--p-font-size);
+    font-weight: var(--font-weight-normal);
+  }
+  
+  
+  ::selection {
+    background: var(--primary-color);
+    color: var(--white-color);
+  }
+  
+  ::-moz-selection {
+    background: var(--primary-color);
+    color: var(--white-color);
+  }
+  
+  .section-padding {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  
+  .custom-border-radius {
+    border-radius: 20px;
+  }
+  
+  b,
+  strong {
+    font-weight: var(--font-weight-bold);
+  }
+  
+  .small-title {
+    text-transform: uppercase;
+  }
+  
+  .avatar-image {
+    border: 2px solid var(--white-color);
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+  
+  .avatar-image-left {
+    position: relative;
+    left: -10px;
+  }
+  
+  .avatar-image-left + .avatar-image-left {
+    left: -20px;
+  }
+  
+  .avatar-image-left + .avatar-image-left + .avatar-image-left {
+    left: -30px;
+  }
+  
+  .avatar-image-left + .avatar-image-left + .avatar-image-left + .avatar-image-left {
+    left: -40px;
+  }
+  
+  .avatar-info {
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  
+  /*---------------------------------------
+    CUSTOM ICON               
+  -----------------------------------------*/
+  .custom-icon {
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    border: 2px solid var(--white-color);
+    text-align: center;
+    border-radius: 50%;
+    font-size: 20px;
+    position: relative;
+  }
+  
+  .custom-icon::before,
+  .custom-icon::after {
+    box-sizing: inherit;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+  }
+  
+  .custom-icon::before {
+    border: 2px solid transparent;
+  }
+  
+  .custom-icon::after {
+    border: 0 solid transparent;
+  }
+  
+  .custom-icon:hover {
+    border-color: transparent;
+  }
+  
+  .custom-icon:hover::before {
+    border-top-color: var(--primary-color);
+    border-right-color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
+    transition: border-top-color .15s linear,border-right-color .15s linear .1s,border-bottom-color .15s linear .2s;
+  }
+  
+  .custom-icon:hover::after {
+    border-top: 2px solid var(--primary-color);
+    border-left-width: 2px;
+    border-right-width: 2px;
+    transform: rotate(270deg);
+    transition: transform .4s linear 0s,border-left-width 0s linear .35s;
+  }
+  
+  
+  /*---------------------------------------
+    CUSTOM BUTTON               
+  -----------------------------------------*/
+  .custom-btn,
+  .navbar-expand-lg .navbar-nav .nav-link.custom-btn,
+  .navbar-nav .nav-link.custom-btn {
+    background: var(--navbar-bg-color);
+    border-radius: 100px;
+    color: var(--white-color);
+    font-size: var(--copyright-text-font-size);
+    font-weight: var(--font-weight-bold);
+    padding: 10px 20px;
+  }
+  .custom-btn:hover,
+  .navbar-expand-lg .navbar-nav .nav-link.custom-btn:hover,
+  .navbar-nav .nav-link.custom-btn:hover {
+    background: var(--primary-color);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+    color: var(--white-color);
+  }
+  
+  /* PRICING              
+  ----------------------------------------- important */
+    
+  .pricing-thumb {
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .pricing-title-wrap,
+  .pricing-body {
+    padding: 40px;
+  }
+  
+  .pricing-title-wrap {
+    background: var(--navbar-bg-color);
+    padding: 20px 110px;
+  }
+  
+  .pricing-title {
+    color: var(--white-color);
+  }
+  
